@@ -7,13 +7,13 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --text-color: #1f2937;
-    --light-bg: #f9fafb;
+    --primary-color: #4f46e5;
+    --secondary-color: #7c3aed;
+    --text-color: #111827;
+    --light-bg: #f0f9ff;
     --white: #ffffff;
-    --gray: #6b7280;
-    --border: #e5e7eb;
+    --gray: #374151;
+    --border: #d1d5db;
 }
 
 body {
