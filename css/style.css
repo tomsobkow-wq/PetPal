@@ -7,13 +7,21 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
+    --primary-color: #339966;
+    --secondary-color: #4DB380;
     --text-color: #1f2937;
     --light-bg: #f9fafb;
     --white: #ffffff;
     --gray: #6b7280;
     --border: #e5e7eb;
+
+    /* Feature colors matching the app */
+    --food-color: #FF9500;
+    --water-color: #007AFF;
+    --exercise-color: #34C759;
+    --medicine-color: #AF52DE;
+    --vet-color: #5AC8FA;
+    --warning-color: #FF3B30;
 }
 
 body {
@@ -180,8 +188,72 @@ li {
 }
 
 .feature-card h3 {
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-top: 0;
+}
+
+/* Feature color variants */
+.feature-card.food {
+    border-top: 4px solid var(--food-color);
+}
+
+.feature-card.food .feature-icon {
+    color: var(--food-color);
+}
+
+.feature-card.water {
+    border-top: 4px solid var(--water-color);
+}
+
+.feature-card.water .feature-icon {
+    color: var(--water-color);
+}
+
+.feature-card.exercise {
+    border-top: 4px solid var(--exercise-color);
+}
+
+.feature-card.exercise .feature-icon {
+    color: var(--exercise-color);
+}
+
+.feature-card.medicine {
+    border-top: 4px solid var(--medicine-color);
+}
+
+.feature-card.medicine .feature-icon {
+    color: var(--medicine-color);
+}
+
+.feature-card.vet {
+    border-top: 4px solid var(--vet-color);
+}
+
+.feature-card.vet .feature-icon {
+    color: var(--vet-color);
+}
+
+.feature-card.kid-mode {
+    border-top: 4px solid var(--exercise-color);
+}
+
+.feature-card.kid-mode .feature-icon {
+    color: var(--exercise-color);
+}
+
+/* Circular progress indicator styling */
+.progress-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(var(--primary-color) 0deg, var(--border) 0deg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary-color);
 }
 
 /* Contact Form */
