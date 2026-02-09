@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PetPal Support - Get help and contact us">
     <title>Support - PetPal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/app-icon.png" type="image/png">
 </head>
+
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
-            <a href="index.html" class="logo">🐾 PetPal</a>
+            <a href="index.html" class="logo">
+                <img src="images/app-icon.png" alt="PetPal Logo" class="logo-icon">
+                <span>PetPal</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="support.html">Support</a></li>
@@ -20,12 +27,14 @@
         </nav>
     </header>
 
-    <section class="container">
-        <div class="content-section">
+    <!-- Main Content -->
+    <section class="policy-page">
+        <div class="policy-container">
             <h1>Support & Help Center</h1>
 
             <div class="info-box">
-                <p><strong>Need help?</strong> We're here to assist you with any questions or issues you may have with PetPal. Check out our FAQ below or contact us directly.</p>
+                <p><strong>Need help?</strong> We're here to assist you with any questions or issues you may have with
+                    PetPal. Check out our FAQ below or contact us directly.</p>
             </div>
 
             <h2>Frequently Asked Questions</h2>
@@ -66,7 +75,8 @@
             </ol>
 
             <h3>Can I manage multiple pets?</h3>
-            <p>Yes! PetPal allows you to create and manage profiles for unlimited pets. Track all your pets from one convenient dashboard with color-coded status indicators.</p>
+            <p>Yes! PetPal allows you to create and manage profiles for unlimited pets. Track all your pets from one
+                convenient dashboard with color-coded status indicators.</p>
 
             <h3>What species does PetPal support?</h3>
             <p>PetPal supports 12 different pet species:</p>
@@ -84,7 +94,8 @@
                 <li>Reptiles</li>
                 <li>Other</li>
             </ul>
-            <p>Each species has tailored care guidance and appropriate activity tracking (exercise for active pets, habitat cleaning for aquatic/caged pets).</p>
+            <p>Each species has tailored care guidance and appropriate activity tracking (exercise for active pets,
+                habitat cleaning for aquatic/caged pets).</p>
 
             <h3>How do I schedule a vet visit?</h3>
             <p>To schedule a vet appointment:</p>
@@ -107,7 +118,8 @@
                 <li>Shows only daily care tasks (food, water, exercise)</li>
                 <li>Easy toggle on/off from the dashboard</li>
             </ul>
-            <p>This makes it safe for kids to participate in pet care without accidentally modifying important information.</p>
+            <p>This makes it safe for kids to participate in pet care without accidentally modifying important
+                information.</p>
 
             <h3>How do notifications work?</h3>
             <p>PetPal sends smart notifications for:</p>
@@ -121,7 +133,8 @@
             <p>You can enable/disable notifications for each resource type in your pet's settings.</p>
 
             <h3>Is my data secure?</h3>
-            <p>Yes, we take data security seriously. All data is stored locally on your device. For more details about data collection and privacy, please read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+            <p>Yes, we take data security seriously. All data is stored locally on your device. For more details about
+                data collection and privacy, please read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
             <h3>How do I delete a pet?</h3>
             <p>To delete a pet profile:</p>
@@ -137,70 +150,37 @@
             <h2>Contact Us</h2>
             <p>Can't find the answer you're looking for? We're here to help!</p>
 
-            <div class="contact-form">
-                <form id="contactForm" action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                </form>
-
-                <p style="margin-top: 1rem; text-align: center; color: var(--gray);">
-                    <small>We typically respond within 24-48 hours</small>
+            <div class="contact-info-box">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> <a href="mailto:pet.pal.for.pets@gmail.com">pet.pal.for.pets@gmail.com</a>
                 </p>
+                <p>We typically respond within 24-48 hours.</p>
             </div>
 
-            <h2>Other Ways to Reach Us</h2>
-            <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 10px; margin-top: 2rem;">
-                <p><strong>Email Support:</strong> <a href="mailto:support@petpal.app">support@petpal.app</a></p>
-                <p><strong>Bug Reports:</strong> <a href="mailto:bugs@petpal.app">bugs@petpal.app</a></p>
-                <p><strong>Feature Requests:</strong> <a href="mailto:feedback@petpal.app">feedback@petpal.app</a></p>
-                <p><strong>Business Inquiries:</strong> <a href="mailto:hello@petpal.app">hello@petpal.app</a></p>
-            </div>
-
-            <h2>App Information</h2>
-            <p>For technical details and app version information, please check the "About" section in the app settings.</p>
-
-            <div class="info-box" style="margin-top: 2rem;">
-                <p><strong>Tip:</strong> Before contacting support, make sure you're running the latest version of PetPal. Many issues are resolved in app updates!</p>
+            <div class="info-box" style="margin-top: 3rem;">
+                <p><strong>Tip:</strong> Before contacting support, make sure you're running the latest version of
+                    PetPal. Many issues are resolved in app updates!</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="support.html">Support</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/app-icon.png" alt="PetPal" class="footer-logo">
+                <p>PetPal</p>
+                <p class="footer-tagline">Helping families care for pets, together.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
         </div>
-        <p>&copy; 2024 PetPal. All rights reserved.</p>
+        <p class="copyright">&copy; 2024 PetPal. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Simple form validation and submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.\n\nNote: This is a demo form. For actual support, please email support@petpal.app');
-            this.reset();
-        });
-    </script>
 </body>
+
 </html>

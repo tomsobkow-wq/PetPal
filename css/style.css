@@ -11,23 +11,23 @@
     --primary-color: #339966;
     --primary-light: #4DB380;
     --primary-dark: #2a7d54;
-    
+
     /* Text Colors */
     --text-color: #1f2937;
     --text-light: #6b7280;
     --text-dark: #111827;
-    
+
     /* Background Colors */
     --light-bg: #f8fafc;
     --white: #ffffff;
     --border: #e5e7eb;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
     --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
-    
+
     /* Feature Colors - Matching iOS App */
     --food-color: #FF9500;
     --water-color: #007AFF;
@@ -197,8 +197,15 @@ nav {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 /* Decorative paw prints */
@@ -238,12 +245,16 @@ nav {
 }
 
 @keyframes float-paw {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
     }
+
     25% {
         transform: translateY(-30px) rotate(5deg);
     }
+
     75% {
         transform: translateY(30px) rotate(-5deg);
     }
@@ -317,6 +328,7 @@ nav {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -450,23 +462,53 @@ nav {
 }
 
 /* Feature-specific colors */
-.feature-card.food::before { background: linear-gradient(90deg, var(--food-color), #ffb03a); }
-.feature-card.food .feature-icon { background: rgba(255, 149, 0, 0.1); }
+.feature-card.food::before {
+    background: linear-gradient(90deg, var(--food-color), #ffb03a);
+}
 
-.feature-card.water::before { background: linear-gradient(90deg, var(--water-color), #3a93ff); }
-.feature-card.water .feature-icon { background: rgba(0, 122, 255, 0.1); }
+.feature-card.food .feature-icon {
+    background: rgba(255, 149, 0, 0.1);
+}
 
-.feature-card.exercise::before { background: linear-gradient(90deg, var(--exercise-color), #5dd97c); }
-.feature-card.exercise .feature-icon { background: rgba(52, 199, 89, 0.1); }
+.feature-card.water::before {
+    background: linear-gradient(90deg, var(--water-color), #3a93ff);
+}
 
-.feature-card.medicine::before { background: linear-gradient(90deg, var(--medicine-color), #c76fea); }
-.feature-card.medicine .feature-icon { background: rgba(175, 82, 222, 0.1); }
+.feature-card.water .feature-icon {
+    background: rgba(0, 122, 255, 0.1);
+}
 
-.feature-card.vet::before { background: linear-gradient(90deg, var(--vet-color), #7dd9fa); }
-.feature-card.vet .feature-icon { background: rgba(90, 200, 250, 0.1); }
+.feature-card.exercise::before {
+    background: linear-gradient(90deg, var(--exercise-color), #5dd97c);
+}
 
-.feature-card.kid-mode::before { background: linear-gradient(90deg, var(--kid-mode-color), #ffd14d); }
-.feature-card.kid-mode .feature-icon { background: rgba(255, 184, 0, 0.1); }
+.feature-card.exercise .feature-icon {
+    background: rgba(52, 199, 89, 0.1);
+}
+
+.feature-card.medicine::before {
+    background: linear-gradient(90deg, var(--medicine-color), #c76fea);
+}
+
+.feature-card.medicine .feature-icon {
+    background: rgba(175, 82, 222, 0.1);
+}
+
+.feature-card.vet::before {
+    background: linear-gradient(90deg, var(--vet-color), #7dd9fa);
+}
+
+.feature-card.vet .feature-icon {
+    background: rgba(90, 200, 250, 0.1);
+}
+
+.feature-card.kid-mode::before {
+    background: linear-gradient(90deg, var(--kid-mode-color), #ffd14d);
+}
+
+.feature-card.kid-mode .feature-icon {
+    background: rgba(255, 184, 0, 0.1);
+}
 
 /* =========================
    BENEFITS SECTION
@@ -644,7 +686,7 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.footer-brand > p:first-of-type {
+.footer-brand>p:first-of-type {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
@@ -692,15 +734,15 @@ footer {
         gap: 3rem;
         text-align: center;
     }
-    
+
     .hero-text h1 {
         font-size: 2.75rem;
     }
-    
+
     .hero-text p {
         font-size: 1.2rem;
     }
-    
+
     .mockup-device {
         max-width: 400px;
     }
@@ -711,50 +753,50 @@ footer {
         gap: 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     .hero {
         padding: 4rem 1.5rem 5rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.25rem;
     }
-    
+
     .hero-text p {
         font-size: 1.1rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .section-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .features {
         grid-template-columns: 1fr;
         padding: 3rem 1.5rem;
     }
-    
+
     .benefits-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .download-card {
         padding: 3rem 2rem;
     }
-    
+
     .download-card h2 {
         font-size: 2rem;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-brand {
         align-items: center;
     }
@@ -764,35 +806,211 @@ footer {
     .nav-links {
         display: none;
     }
-    
+
     .logo-icon {
         width: 35px;
         height: 35px;
     }
-    
+
     .hero-text h1 {
         font-size: 1.85rem;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
     }
-    
+
     .cta-button {
         padding: 0.9rem 2rem;
         font-size: 0.95rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .feature-card {
         padding: 2rem 1.5rem;
     }
-    
+
     .download-icon {
         width: 100px;
         height: 100px;
+    }
+}
+
+/* =========================
+   POLICY PAGES STYLING
+========================= */
+
+.policy-page {
+    background: linear-gradient(135deg, rgba(45, 138, 90, 0.03) 0%, rgba(51, 153, 102, 0.05) 100%);
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+}
+
+.policy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.08);
+}
+
+.policy-container h1 {
+    font-size: 2.75rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.policy-container h2 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin: 3rem 0 1.25rem 0;
+    font-weight: 700;
+    line-height: 1.3;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.policy-container h3 {
+    font-size: 1.35rem;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.policy-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.policy-container ul,
+.policy-container ol {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin: 1.5rem 0 1.5rem 2rem;
+    padding-left: 1rem;
+}
+
+.policy-container li {
+    margin-bottom: 0.75rem;
+}
+
+.policy-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.policy-container a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.last-updated {
+    background: linear-gradient(135deg, rgba(51, 153, 102, 0.1) 0%, rgba(77, 179, 128, 0.1) 100%);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.info-box {
+    background: linear-gradient(135deg, rgba(51, 153, 102, 0.08) 0%, rgba(77, 179, 128, 0.08) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 5px solid var(--primary-color);
+}
+
+.info-box p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.contact-info-box {
+    background: linear-gradient(135deg, rgba(51, 153, 102, 0.05) 0%, rgba(77, 179, 128, 0.05) 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border: 2px solid rgba(51, 153, 102, 0.2);
+    text-align: center;
+}
+
+.contact-info-box h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.contact-info-box p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info-box p:last-child {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+/* Mobile responsiveness for policy pages */
+@media (max-width: 768px) {
+    .policy-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .policy-container {
+        padding: 2.5rem 2rem;
+        border-radius: 15px;
+    }
+
+    .policy-container h1 {
+        font-size: 2rem;
+    }
+
+    .policy-container h2 {
+        font-size: 1.5rem;
+        margin: 2.5rem 0 1rem 0;
+    }
+
+    .policy-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .policy-container p,
+    .policy-container ul,
+    .policy-container ol {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .policy-page {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .policy-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .policy-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .info-box,
+    .contact-info-box {
+        padding: 1.5rem;
     }
 }
