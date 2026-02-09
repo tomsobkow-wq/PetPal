@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PetPal - Your ultimate companion for pet care and management">
-    <meta name="keywords" content="pet care, pet management, pet app, pet health">
+    <meta name="description" content="PetPal - Help your kids remember to feed and care for their pets. Track food, water, medicine, and vet visits with ease.">
+    <meta name="keywords" content="pet care, pet tracking, kids pet app, pet feeding reminder, pet health, family pet care">
     <meta name="author" content="PetPal">
-    <title>PetPal - Your Pet Care Companion</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PetPal - Your Pet's Best Friend">
+    <meta property="og:description" content="Help kids remember to feed animals and track pet care with ease">
+    <meta property="og:type" content="website">
+    
+    <title>PetPal - Your Pet's Best Friend</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/app-icon.png" type="image/png">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
-            <a href="index.html" class="logo">🐾 PetPal</a>
+            <a href="index.html" class="logo">
+                <img src="images/app-icon.png" alt="PetPal Logo" class="logo-icon">
+                <span>PetPal</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="support.html">Support</a></li>
@@ -22,79 +33,197 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>PetPal - Your Pet's Best Friend</h1>
-        <p>Effortlessly track food, water, and daily care to ensure your pet stays happy and healthy</p>
-        <a href="#download" class="cta-button">Download on App Store</a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in">Your Pet's Best Friend</h1>
+                <p class="fade-in-delay-1">Help kids remember to feed animals and track daily pet care with visual progress indicators and smart reminders.</p>
+                <a href="#download" class="cta-button fade-in-delay-2">
+                    <svg class="app-store-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                    </svg>
+                    Download on App Store
+                </a>
+            </div>
+            <div class="hero-image fade-in-delay-3">
+                <img src="images/hero-mockup.png" alt="PetPal App Interface" class="mockup-device">
+            </div>
+        </div>
+        <!-- Decorative elements -->
+        <div class="hero-decoration">
+            <div class="paw-print paw-1">🐾</div>
+            <div class="paw-print paw-2">🐾</div>
+            <div class="paw-print paw-3">🐾</div>
+        </div>
     </section>
 
+    <!-- Features Overview -->
+    <section class="features-intro">
+        <div class="container-narrow">
+            <h2 class="section-title">Never Ask "Did I Feed the Dog?" Again</h2>
+            <p class="section-subtitle">Track pet care with visual progress indicators that kids can understand at a glance.</p>
+            <img src="images/features-demo.png" alt="Circular progress tracking" class="features-demo-image">
+        </div>
+    </section>
+
+    <!-- Feature Cards -->
     <section class="features">
         <div class="feature-card food">
-            <div class="feature-icon">◐</div>
+            <div class="feature-icon">🍽️</div>
             <h3>Food Tracking</h3>
-            <p>Track how long your pet's food lasts with circular progress indicators and smart alerts when supplies run low.</p>
+            <p>Track how long your pet's food lasts with circular progress indicators. Get smart alerts when supplies run low so kids never forget to feed their pets.</p>
         </div>
+        
         <div class="feature-card water">
-            <div class="feature-icon">◉</div>
+            <div class="feature-icon">💧</div>
             <h3>Water Monitoring</h3>
-            <p>Monitor water levels with customizable duration settings. Get notified when it's time to refill.</p>
+            <p>Monitor water levels with customizable duration settings. Receive timely notifications when it's time to refill the bowl.</p>
         </div>
+        
         <div class="feature-card exercise">
-            <div class="feature-icon">◎</div>
+            <div class="feature-icon">🏃</div>
             <h3>Exercise & Habitat Care</h3>
-            <p>Track exercise routines for active pets or habitat cleaning schedules for aquatic and caged companions.</p>
+            <p>Track exercise routines for active pets or habitat cleaning schedules for aquatic and caged companions. Keep every pet happy and healthy.</p>
         </div>
+        
         <div class="feature-card medicine">
-            <div class="feature-icon">◐</div>
+            <div class="feature-icon">💊</div>
             <h3>Medicine Management</h3>
-            <p>Never miss a dose. Track medications with custom schedules, dosages, and quick "Give Medicine" actions.</p>
+            <p>Never miss a dose. Track medications with custom schedules, dosages, and quick "Give Medicine" actions for peace of mind.</p>
         </div>
+        
         <div class="feature-card vet">
-            <div class="feature-icon">◎</div>
+            <div class="feature-icon">🏥</div>
             <h3>Vet Visit Scheduler</h3>
-            <p>Schedule and track veterinary appointments with visual calendar, visit history, and reminders.</p>
+            <p>Schedule and track veterinary appointments with a visual calendar, complete visit history, and automatic reminders.</p>
         </div>
+        
         <div class="feature-card kid-mode">
-            <div class="feature-icon">◉</div>
+            <div class="feature-icon">😊</div>
             <h3>Kid-Friendly Mode</h3>
-            <p>Simplified interface for children to help with pet care, hiding advanced features while keeping tracking fun.</p>
+            <p>Simplified interface designed for children. Hide advanced features while keeping pet care tracking fun and accessible for the whole family.</p>
         </div>
     </section>
 
-    <section class="container" id="download">
-        <div class="content-section" style="text-align: center;">
-            <h2>Download PetPal Today</h2>
-            <p>Available now on the Apple App Store. Start managing your pet care with ease and confidence.</p>
-            <a href="#" class="cta-button" style="margin-top: 1rem;">Get it on App Store</a>
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container-narrow">
+            <h2 class="section-title">Why Families Love PetPal</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-number">12+</div>
+                    <div class="benefit-text">
+                        <h4>Pet Species Supported</h4>
+                        <p>Dogs, cats, fish, birds, rabbits, guinea pigs, and more</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">∞</div>
+                    <div class="benefit-text">
+                        <h4>Unlimited Pets</h4>
+                        <p>Track as many pets as your family cares for</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">✓</div>
+                    <div class="benefit-text">
+                        <h4>Kid-Designed</h4>
+                        <p>Built with children in mind to teach responsibility</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">🔔</div>
+                    <div class="benefit-text">
+                        <h4>Smart Reminders</h4>
+                        <p>Notifications for feeding, water, medicine, and exercise</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-features-list">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Circular progress indicators show exactly when care is needed</li>
+                    <li>Customizable durations - you set how long supplies last</li>
+                    <li>Medicine tracking with dosages and frequencies</li>
+                    <li>Species-specific care guidance built-in</li>
+                    <li>Simple estimation system - perfect for families</li>
+                    <li>Visual tracking that kids can understand</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="container" style="background-color: var(--light-bg);">
-        <div class="content-section">
-            <h2>Why Choose PetPal?</h2>
-            <p>Never wonder "did I feed the dog?" again. PetPal helps you track daily pet care with visual progress indicators and smart notifications. Customize everything to match how you care for your pets - because you know your pet best.</p>
-            <h3>Key Benefits:</h3>
-            <ul>
-                <li>Track unlimited pets across 12 different species</li>
-                <li>Circular progress indicators show exactly when care is needed</li>
-                <li>Smart notifications for low food, water, medicine, and exercise</li>
-                <li>Customizable durations - you set how long supplies last</li>
-                <li>Kid Mode for safe family involvement in pet care</li>
-                <li>Medicine tracking with dosages and frequencies</li>
-                <li>Vet appointment scheduling with visit history</li>
-                <li>Species-specific care guidance built-in</li>
-            </ul>
+    <!-- Download Section -->
+    <section class="download-section" id="download">
+        <div class="container-narrow">
+            <div class="download-card">
+                <img src="images/app-icon.png" alt="PetPal App Icon" class="download-icon">
+                <h2>Download PetPal Today</h2>
+                <p>Available now on the Apple App Store. Start teaching kids responsible pet care with ease and confidence.</p>
+                <a href="https://apps.apple.com" class="cta-button cta-large">
+                    <svg class="app-store-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                    </svg>
+                    Get it on App Store
+                </a>
+                <p class="download-note">iOS 14.0 or later required</p>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="support.html">Support</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/app-icon.png" alt="PetPal" class="footer-logo">
+                <p>PetPal</p>
+                <p class="footer-tagline">Helping families care for pets, together.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
         </div>
-        <p>&copy; 2024 PetPal. All rights reserved.</p>
+        <p class="copyright">&copy; 2024 PetPal. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-card, .benefit-item, .section-title').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
